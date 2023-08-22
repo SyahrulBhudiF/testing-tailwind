@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Montserrat:wght@500&family=Poppins:wght@300;400;500;600&display=swap");
+
+@layer base {
+  html {
+    font-family: "Montserrat", sans-serif;
+  }
+}
+
+@layer utilities{
+    .nav-hover:hover{
+        @apply font-semibold cursor-pointer ease-in-out duration-200
+    }
+
+    .height{
+        height: 90vh;
+    }
+
+    .input-box{
+        @apply flex flex-row-reverse justify-around items-center border-b-2 border-black
+    }
+
+    .icon-height{
+        @apply my-1
+    }
+
+    .email{
+        top: 13rem;
+    }
+
+    .password{
+        top: 18.5rem;
+    }
+
+    .inputStyle{
+        @apply bg-transparent h-6 placeholder-slate-500 outline-none
+    }
+
+    .labelStyle{
+        @apply absolute left-32
+    }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  </head>
+  <body class="bg-fixed bg-no-repeat bg-cover bg-bottom h-screen w-screen" style="background-image: url(img/bg.png);">
+    <header>
+      <nav class="flex bg-slate-100 bg-opacity-80 max-w-full h-20 max-h-28 place-content-between items-center py-5 backdrop-blur-sm">
+
+        <a href=""><img src="img/logo.png" alt="logo" class="w-16 mx-10"></a>
+
+        <!-- <ul class="flex gap-16 justify-center text-black font-medium text-lg">
+          <li id="Home" class="nav-hover">Home</li>
+          <li id="List" class="nav-hover">List</li>
+          <li id="About" class="nav-hover">About</li>
+          <li id="Contact" class="nav-hover">Contact</li>
+        </ul> -->
+
+        <span class="py-2 px-4 bg-sky-700 mx-10 rounded-xl text-white hover:bg-sky-800 ease-in-out duration-300 cursor-pointer" id="signin">Sign in</span>
+
+        <span class="py-2 px-4 bg-sky-700 mx-10 rounded-xl text-white hover:bg-sky-800 ease-in-out duration-300 cursor-pointer hidden" id="login">Login</span>
+
+      </nav>
+    </header>
+
+    <main class="flex justify-center items-center height">
+
+      <section class="flex flex-col justify-center max-w-screen-xl px-32 gap-6 bg-white rounded-xl bg-opacity-50 backdrop-blur-sm w-fit h-fit shadow-2xl shadow-black" style="height: 36rem;">
+
+        <p class="text-center text-4xl font-semibold text-sky-700">Login</p>
+        <br>
+
+        <form id="loginForm" class="flex flex-col gap-14">
+
+          <div class="input-box">
+            <i class="material-icons icon-height">&#xe0be;</i>
+            <input id="inputEmail" type="email" class="inputStyle" placeholder="Email@gmail.com" required>
+            <label for="inputEmail" class="icon-height labelStyle email">Email</label>
+          </div>
+
+          <div class="input-box">
+            <i class="material-icons icon-height">&#xe897;</i>
+            <input id="inputPassword" type="password" class="inputStyle" placeholder="********" required>
+            <label for="inputPassword" class="icon-height labelStyle password">Password</label>
+          </div>
+
+          <button id="buttonLogin" type="submit" class="py-2 px-16 bg-sky-700 text-white rounded-md hover:bg-sky-800 ease-in-out duration-300">Login</button>
+
+        </form>
+
+    </section>
+    </main>
+  </body>
+
+  <script src="js/script.js"></script>
+
+  </html>
